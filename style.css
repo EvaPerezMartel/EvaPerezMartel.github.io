@@ -372,10 +372,8 @@ footer {
 
     .top-header {
         padding: 18px 25px;
-
         flex-direction: column;
         align-items: flex-start;
-
         gap: 15px;
     }
 
@@ -388,8 +386,18 @@ footer {
         height: 240px;
     }
 
+    /* Smaller homepage banner on mobile */
+    .home-hero {
+        height: 180px;
+    }
+
     .hero-title h1 {
         font-size: 3rem;
+    }
+
+    /* Smaller homepage title on mobile */
+    .home-hero .hero-title h1 {
+        font-size: 2.7rem;
     }
 
     .hero-title p {
@@ -400,9 +408,6 @@ footer {
         padding: 35px 25px 60px 25px;
     }
 
-
-    /* Profile photo stacks above text on mobile */
-
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -411,9 +416,10 @@ footer {
         max-width: 330px;
     }
 
-
     footer {
         padding-left: 25px;
         padding-right: 25px;
     }
 }
+
+
