@@ -1,150 +1,347 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================
+   GENERAL
+   ========================= */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    box-sizing: border-box;
+}
 
-    <title>Eva Pérez</title>
+html {
+    scroll-behavior: smooth;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    margin: 0;
+    background-color: #ffffff;
 
+    font-family: Arial, Helvetica, sans-serif;
 
-<body>
+    color: #333333;
+    line-height: 1.65;
+}
 
+a {
+    color: #347fa6;
+    text-decoration: none;
+}
 
-<!-- =========================
-     TOP MENU
-     ========================= -->
-
-<header class="top-header">
-
-    <div class="top-name">
-        <a href="index.html">Eva Pérez</a>
-    </div>
-
-    <nav class="main-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="research.html">Research</a>
-        <a href="cv.html">CV</a>
-        <a href="teaching.html">Teaching</a>
-    </nav>
-
-</header>
+a:hover {
+    color: #205c7d;
+}
 
 
+/* =========================
+   TOP NAVIGATION
+   ========================= */
 
-<!-- =========================
-     MAIN CONTENT
-     ========================= -->
+.top-header {
+    width: 100%;
 
-<main class="container">
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 18px 45px;
 
-    <!-- NAME -->
+    background-color: #ffffff;
+}
 
-    <section class="name-section">
+.top-name a {
+    color: #555555;
 
-        <h1>Eva Pérez</h1>
+    font-size: 1.05rem;
+    font-weight: 400;
+}
 
-        <p class="position">
-            Ph.D. Candidate in Economics · UAB &amp; BSE
-        </p>
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
 
-    </section>
+.main-nav a {
+    color: #666666;
 
+    font-size: 1rem;
+    font-weight: 400;
+}
 
+.main-nav a:hover {
+    color: #347fa6;
+}
 
-    <!-- ABOUT -->
-
-    <section class="about-section">
-
-        <div class="about-grid">
-
-
-            <!-- PHOTO -->
-
-            <div class="about-photo">
-
-                <img src="profile.jpg"
-                     alt="Eva Pérez">
-
-            </div>
-
-
-            <!-- BIO -->
-
-            <div class="about-text">
-
-                <p>
-                    I am a Ph.D. candidate in Economics at
-                    <em>IAE-CSIC</em>,
-                    <em>Universitat Autònoma de Barcelona (UAB)</em>,
-                    and the
-                    <em>Barcelona School of Economics (BSE)</em>,
-                    under the supervision of
-                    Jordi Caballé, Matthew Ellman, and Fernando Payró.
-                </p>
-
-                <p>
-                    My <strong>primary research interests</strong> are
-                    Applied Microeconomic Theory, Networks, and Finance,
-                    with secondary interests in Economics of Information
-                    and Political Economy.
-                </p>
-
-                <p>
-                    I am on the
-                    <strong>2026–27 Job Market</strong>.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
+.main-nav a.active {
+    color: #222222;
+}
 
 
+/* =========================
+   TOP BANNER
+   ========================= */
 
-    <!-- CONTACT -->
+.page-hero {
+    width: 100%;
+    height: 330px;
 
-    <section id="contact" class="contact-section">
+    background-size: cover;
+    background-position: center;
 
-        <h2>Contact</h2>
+    position: relative;
 
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:YOUR-EMAIL">
-                YOUR-EMAIL
-            </a>
-        </p>
-
-        <p>
-            Universitat Autònoma de Barcelona<br>
-            Barcelona, Spain
-        </p>
-
-    </section>
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-</main>
+/* LIGHT BLUE PLACEHOLDER
+   until you add your photo */
+
+.home-hero {
+    background-color: #a9cfe5;
+
+    /*
+    Later, when you upload your picture:
+
+    background-image: url("home-banner.jpg");
+    */
+}
 
 
+/* This makes text readable over photos */
 
-<!-- =========================
-     FOOTER
-     ========================= -->
+.page-hero::before {
+    content: "";
 
-<footer>
+    position: absolute;
+    inset: 0;
 
-    <p>
-        Last updated: September 2026
-    </p>
-
-</footer>
+    background: rgba(0, 0, 0, 0.18);
+}
 
 
-</body>
+.hero-title {
+    position: relative;
+    z-index: 1;
 
-</html>
+    text-align: center;
+
+    color: white;
+}
+
+.hero-title h1 {
+    margin: 0;
+
+    font-size: 4.5rem;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+}
+
+.hero-title p {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.page-content {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 50px 35px 70px 35px;
+}
+
+
+/* =========================
+   TITLES
+   ========================= */
+
+h2 {
+    color: #347fa6;
+
+    font-size: 1.9rem;
+    font-weight: 400;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    margin-top: 6px;
+
+    border-bottom: 2px solid #347fa6;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-section {
+    font-size: 1.05rem;
+
+    margin-bottom: 70px;
+}
+
+.about-section p {
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-section {
+    max-width: 700px;
+
+    margin-top: 60px;
+}
+
+
+/* =========================
+   RESEARCH PAGES
+   ========================= */
+
+.paper {
+    margin-bottom: 45px;
+}
+
+.paper-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.paper-info {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.paper-label {
+    color: #347fa6;
+    font-weight: 600;
+}
+
+details {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+summary {
+    cursor: pointer;
+
+    color: #347fa6;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   TEACHING
+   ========================= */
+
+.teaching-item {
+    margin-bottom: 38px;
+}
+
+.teaching-item h3 {
+    margin-top: 4px;
+    margin-bottom: 5px;
+
+    font-size: 1.3rem;
+}
+
+.teaching-role {
+    color: #347fa6;
+
+    font-weight: 600;
+
+    margin-bottom: 0;
+}
+
+.teaching-program {
+    color: #666666;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.teaching-professor {
+    margin-top: 0;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 20px 35px 35px 35px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #999999;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 750px) {
+
+    .top-header {
+        padding: 18px 25px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .page-hero {
+        height: 240px;
+    }
+
+    .hero-title h1 {
+        font-size: 3rem;
+    }
+
+    .hero-title p {
+        font-size: 1rem;
+    }
+
+    .page-content {
+        padding: 35px 25px 60px 25px;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
