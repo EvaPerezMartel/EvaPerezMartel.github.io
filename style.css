@@ -136,6 +136,23 @@ a:hover {
     background: rgba(0, 0, 0, 0.18);
 }
 
+/* =========================
+   SMALLER HOME BANNER
+   ========================= */
+
+.home-hero {
+    height: 210px;
+    background-color: #a9cfe5;
+    background-image: url("home-banner.jpg");
+}
+
+.home-hero .hero-title h1 {
+    font-size: 3.6rem;
+}
+
+.home-hero .hero-title p {
+    font-size: 1.1rem;
+}
 
 /* Text over banner */
 
