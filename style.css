@@ -188,10 +188,8 @@ a:hover {
 
 .page-content {
     max-width: 1000px;
-
     margin: 0 auto;
-
-    padding: 50px 35px 70px 35px;
+    padding: 35px 35px 70px 35px;
 }
 
 
