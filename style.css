@@ -125,6 +125,14 @@ a:hover {
 }
 
 
+/* REFERENCES PHOTO - for later */
+
+.references-hero {
+    background-color: #a9cfe5;
+    background-image: url("references-banner.jpg");
+}
+
+
 /* Dark layer over banner photos */
 
 .page-hero::before {
@@ -136,23 +144,6 @@ a:hover {
     background: rgba(0, 0, 0, 0.18);
 }
 
-/* =========================
-   SMALLER HOME BANNER
-   ========================= */
-
-.home-hero {
-    height: 210px;
-    background-color: #a9cfe5;
-    background-image: url("home-banner.jpg");
-}
-
-.home-hero .hero-title h1 {
-    font-size: 3.6rem;
-}
-
-.home-hero .hero-title p {
-    font-size: 1.1rem;
-}
 
 /* Text over banner */
 
@@ -168,7 +159,7 @@ a:hover {
 .hero-title h1 {
     margin: 0;
 
-    font-size: 4.5rem;
+    font-size: 3.6rem;
     font-weight: 300;
 
     letter-spacing: 1px;
@@ -178,7 +169,7 @@ a:hover {
     margin-top: 5px;
     margin-bottom: 0;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 
@@ -188,7 +179,9 @@ a:hover {
 
 .page-content {
     max-width: 1000px;
+
     margin: 0 auto;
+
     padding: 35px 35px 70px 35px;
 }
 
@@ -346,6 +339,34 @@ summary {
 
 
 /* =========================
+   REFERENCES
+   ========================= */
+
+.reference-item {
+    margin-bottom: 40px;
+}
+
+.reference-item h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: 1.3rem;
+}
+
+.reference-affiliation {
+    color: #666666;
+
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.reference-item p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+/* =========================
    FOOTER
    ========================= */
 
@@ -372,8 +393,10 @@ footer {
 
     .top-header {
         padding: 18px 25px;
+
         flex-direction: column;
         align-items: flex-start;
+
         gap: 15px;
     }
 
@@ -383,20 +406,10 @@ footer {
     }
 
     .page-hero {
-        height: 240px;
-    }
-
-    /* Smaller homepage banner on mobile */
-    .home-hero {
         height: 180px;
     }
 
     .hero-title h1 {
-        font-size: 3rem;
-    }
-
-    /* Smaller homepage title on mobile */
-    .home-hero .hero-title h1 {
         font-size: 2.7rem;
     }
 
@@ -421,5 +434,3 @@ footer {
         padding-right: 25px;
     }
 }
-
-
