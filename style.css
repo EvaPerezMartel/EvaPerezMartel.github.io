@@ -75,7 +75,7 @@ a:hover {
 
 
 /* =========================
-   TOP BANNER
+   TOP BANNERS
    ========================= */
 
 .page-hero {
@@ -93,21 +93,39 @@ a:hover {
 }
 
 
-/* LIGHT BLUE PLACEHOLDER
-   until you add your photo */
+/* HOME PHOTO */
 
 .home-hero {
     background-color: #a9cfe5;
-
-    /*
-    Later, when you upload your picture:
-
     background-image: url("home-banner.jpg");
-    */
 }
 
 
-/* This makes text readable over photos */
+/* RESEARCH PHOTO */
+
+.research-hero {
+    background-color: #a9cfe5;
+    background-image: url("research-banner.jpg");
+}
+
+
+/* CV PHOTO */
+
+.cv-hero {
+    background-color: #a9cfe5;
+    background-image: url("cv-banner.jpg");
+}
+
+
+/* TEACHING PHOTO */
+
+.teaching-hero {
+    background-color: #a9cfe5;
+    background-image: url("teaching-banner.jpg");
+}
+
+
+/* Dark layer over banner photos */
 
 .page-hero::before {
     content: "";
@@ -118,6 +136,8 @@ a:hover {
     background: rgba(0, 0, 0, 0.18);
 }
 
+
+/* Text over banner */
 
 .hero-title {
     position: relative;
@@ -195,8 +215,33 @@ h2::after {
     margin-bottom: 70px;
 }
 
-.about-section p {
+
+/* Profile photo + description */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 36% 64%;
+
+    gap: 45px;
+
+    align-items: start;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+
+    display: block;
+}
+
+.about-text p {
     margin-bottom: 22px;
+}
+
+.about-text p:first-child {
+    margin-top: 0;
 }
 
 
@@ -212,7 +257,7 @@ h2::after {
 
 
 /* =========================
-   RESEARCH PAGES
+   RESEARCH
    ========================= */
 
 .paper {
@@ -339,6 +384,18 @@ footer {
     .page-content {
         padding: 35px 25px 60px 25px;
     }
+
+
+    /* Profile photo stacks above text on mobile */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo img {
+        max-width: 330px;
+    }
+
 
     footer {
         padding-left: 25px;
