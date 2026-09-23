@@ -1,12 +1,87 @@
-/* ===================================
-   INTERNAL PAGE HEADER
-   =================================== */
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #333333;
+    line-height: 1.65;
+}
+
+a {
+    color: #347fa6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #205c7d;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+   ========================= */
+
+.top-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 45px;
+
+    background-color: #ffffff;
+}
+
+.top-name a {
+    color: #555555;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #666666;
+
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.main-nav a:hover {
+    color: #347fa6;
+}
+
+.main-nav a.active {
+    color: #222222;
+}
+
+
+/* =========================
+   TOP BANNER
+   ========================= */
 
 .page-hero {
     width: 100%;
     height: 330px;
 
-    background-color: #a9cfe5;
     background-size: cover;
     background-position: center;
 
@@ -17,55 +92,128 @@
     justify-content: center;
 }
 
-/* dark transparent layer when you later use a photo */
-.page-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
+
+/* LIGHT BLUE PLACEHOLDER
+   until you add your photo */
+
+.home-hero {
+    background-color: #a9cfe5;
+
+    /*
+    Later, when you upload your picture:
+
+    background-image: url("home-banner.jpg");
+    */
 }
 
-.page-hero h1 {
+
+/* This makes text readable over photos */
+
+.page-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.18);
+}
+
+
+.hero-title {
     position: relative;
     z-index: 1;
 
+    text-align: center;
+
     color: white;
+}
+
+.hero-title h1 {
+    margin: 0;
 
     font-size: 4.5rem;
     font-weight: 300;
 
-    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hero-title p {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-size: 1.2rem;
 }
 
 
-/* ===================================
-   INTERNAL PAGE CONTENT
-   =================================== */
+/* =========================
+   MAIN CONTENT
+   ========================= */
 
 .page-content {
     max-width: 1000px;
+
     margin: 0 auto;
-    padding: 45px 35px 70px 35px;
+
+    padding: 50px 35px 70px 35px;
 }
 
-.page-content h2 {
+
+/* =========================
+   TITLES
+   ========================= */
+
+h2 {
     color: #347fa6;
-    font-size: 2rem;
+
+    font-size: 1.9rem;
+    font-weight: 400;
+
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
-.page-content h3 {
-    color: #222;
-    font-size: 1.35rem;
-    margin-top: 40px;
-    margin-bottom: 8px;
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    margin-top: 6px;
+
+    border-bottom: 2px solid #347fa6;
 }
 
 
-/* ===================================
-   RESEARCH
-   =================================== */
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-section {
+    font-size: 1.05rem;
+
+    margin-bottom: 70px;
+}
+
+.about-section p {
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-section {
+    max-width: 700px;
+
+    margin-top: 60px;
+}
+
+
+/* =========================
+   RESEARCH PAGES
+   ========================= */
 
 .paper {
     margin-bottom: 45px;
@@ -74,6 +222,7 @@
 .paper-title {
     font-size: 1.35rem;
     font-weight: 600;
+
     margin-bottom: 5px;
 }
 
@@ -87,59 +236,112 @@
     font-weight: 600;
 }
 
-.paper details {
-    margin-top: 12px;
+details {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-.paper summary {
-    color: #347fa6;
+summary {
     cursor: pointer;
+
+    color: #347fa6;
+
     font-weight: 600;
 }
 
 
-/* ===================================
+/* =========================
    TEACHING
-   =================================== */
+   ========================= */
 
 .teaching-item {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 
 .teaching-item h3 {
-    margin-bottom: 3px;
-}
+    margin-top: 4px;
+    margin-bottom: 5px;
 
-.teaching-program {
-    color: #666;
-    margin: 0 0 5px 0;
-}
-
-.teaching-professor {
-    margin: 0;
+    font-size: 1.3rem;
 }
 
 .teaching-role {
     color: #347fa6;
+
     font-weight: 600;
+
+    margin-bottom: 0;
+}
+
+.teaching-program {
+    color: #666666;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.teaching-professor {
+    margin-top: 0;
 }
 
 
-/* ===================================
-   MOBILE
-   =================================== */
+/* =========================
+   FOOTER
+   ========================= */
 
-@media (max-width: 700px) {
+footer {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 20px 35px 35px 35px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #999999;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 750px) {
+
+    .top-header {
+        padding: 18px 25px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
 
     .page-hero {
         height: 240px;
     }
 
-    .page-hero h1 {
+    .hero-title h1 {
         font-size: 3rem;
+    }
+
+    .hero-title p {
+        font-size: 1rem;
     }
 
     .page-content {
         padding: 35px 25px 60px 25px;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
