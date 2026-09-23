@@ -1,145 +1,152 @@
-/* ===================================
-   INTERNAL PAGE HEADER
-   =================================== */
+<!DOCTYPE html>
+<html lang="en">
 
-.page-hero {
-    width: 100%;
-    height: 330px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    background-color: #a9cfe5;
-    background-size: cover;
-    background-position: center;
+    <title>Eva Pérez</title>
 
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* dark transparent layer when you later use a photo */
-.page-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-}
-
-.page-hero h1 {
-    position: relative;
-    z-index: 1;
-
-    color: white;
-
-    font-size: 4.5rem;
-    font-weight: 300;
-
-    margin: 0;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
-/* ===================================
-   INTERNAL PAGE CONTENT
-   =================================== */
-
-.page-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 45px 35px 70px 35px;
-}
-
-.page-content h2 {
-    color: #347fa6;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 35px;
-}
-
-.page-content h3 {
-    color: #222;
-    font-size: 1.35rem;
-    margin-top: 40px;
-    margin-bottom: 8px;
-}
+<body>
 
 
-/* ===================================
-   RESEARCH
-   =================================== */
+<!-- =========================
+     TOP MENU
+     ========================= -->
 
-.paper {
-    margin-bottom: 45px;
-}
+<header class="top-header">
 
-.paper-title {
-    font-size: 1.35rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
+    <div class="top-name">
+        <a href="index.html">Eva Pérez</a>
+    </div>
 
-.paper-info {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
+    <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-.paper-label {
-    color: #347fa6;
-    font-weight: 600;
-}
-
-.paper details {
-    margin-top: 12px;
-}
-
-.paper summary {
-    color: #347fa6;
-    cursor: pointer;
-    font-weight: 600;
-}
+</header>
 
 
-/* ===================================
-   TEACHING
-   =================================== */
 
-.teaching-item {
-    margin-bottom: 35px;
-}
+<!-- =========================
+     MAIN CONTENT
+     ========================= -->
 
-.teaching-item h3 {
-    margin-bottom: 3px;
-}
-
-.teaching-program {
-    color: #666;
-    margin: 0 0 5px 0;
-}
-
-.teaching-professor {
-    margin: 0;
-}
-
-.teaching-role {
-    color: #347fa6;
-    font-weight: 600;
-}
+<main class="container">
 
 
-/* ===================================
-   MOBILE
-   =================================== */
+    <!-- NAME -->
 
-@media (max-width: 700px) {
+    <section class="name-section">
 
-    .page-hero {
-        height: 240px;
-    }
+        <h1>Eva Pérez</h1>
 
-    .page-hero h1 {
-        font-size: 3rem;
-    }
+        <p class="position">
+            Ph.D. Candidate in Economics · UAB &amp; BSE
+        </p>
 
-    .page-content {
-        padding: 35px 25px 60px 25px;
-    }
-}
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section">
+
+        <div class="about-grid">
+
+
+            <!-- PHOTO -->
+
+            <div class="about-photo">
+
+                <img src="profile.jpg"
+                     alt="Eva Pérez">
+
+            </div>
+
+
+            <!-- BIO -->
+
+            <div class="about-text">
+
+                <p>
+                    I am a Ph.D. candidate in Economics at
+                    <em>IAE-CSIC</em>,
+                    <em>Universitat Autònoma de Barcelona (UAB)</em>,
+                    and the
+                    <em>Barcelona School of Economics (BSE)</em>,
+                    under the supervision of
+                    Jordi Caballé, Matthew Ellman, and Fernando Payró.
+                </p>
+
+                <p>
+                    My <strong>primary research interests</strong> are
+                    Applied Microeconomic Theory, Networks, and Finance,
+                    with secondary interests in Economics of Information
+                    and Political Economy.
+                </p>
+
+                <p>
+                    I am on the
+                    <strong>2026–27 Job Market</strong>.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+
+        <h2>Contact</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:YOUR-EMAIL">
+                YOUR-EMAIL
+            </a>
+        </p>
+
+        <p>
+            Institut d'Anàlisi Econòmica (IAE-CSIC)<br>
+            Universitat Autònoma de Barcelona<br>
+            Barcelona, Spain
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+    <p>
+        Last updated: September 2026
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
