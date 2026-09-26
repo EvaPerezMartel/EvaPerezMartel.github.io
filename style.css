@@ -358,6 +358,46 @@ summary {
     margin-top: 0;
 }
 
+/* =========================
+   CV
+   ========================= */
+
+.cv-item {
+    margin-bottom: 32px;
+}
+
+.cv-item h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+
+    font-size: 1.3rem;
+}
+
+.cv-institution {
+    color: #666666;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.cv-item p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.cv-download-bottom {
+    margin-top: 50px;
+}
+
+.cv-download-bottom a {
+    color: #347fa6;
+    font-weight: 600;
+}
+.cv-item h3 + p {
+    margin-top: 6px;
+}
+
+
 
 /* =========================
    REFERENCES
