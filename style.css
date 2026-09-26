@@ -124,6 +124,12 @@ a:hover {
     background-image: url("teaching-banner.jpg");
 }
 
+.teaching-evaluations {
+    margin-top: 45px;
+    font-style: italic;
+    color: #666666;
+}
+
 
 /* REFERENCES PHOTO - for later */
 
@@ -301,6 +307,21 @@ summary {
 
     font-weight: 600;
 }
+
+.paper-links {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.paper-links a {
+    color: #347fa6;
+    font-weight: 500;
+}
+
+.paper-links a:hover {
+    color: #205c7d;
+}
+
 
 
 /* =========================
