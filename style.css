@@ -396,7 +396,32 @@ summary {
 .cv-item h3 + p {
     margin-top: 6px;
 }
+/* CV download and preview */
 
+.cv-intro {
+    margin-bottom: 22px;
+    font-size: 1.05rem;
+}
+
+.cv-intro a {
+    color: #347fa6;
+}
+
+.cv-intro a:hover {
+    color: #205c7d;
+}
+
+.cv-preview {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.cv-preview iframe {
+    width: 100%;
+    height: 700px;
+
+    border: 1px solid #dddddd;
+}
 
 
 /* =========================
