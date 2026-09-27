@@ -95,10 +95,6 @@ a:hover {
 
 /* HOME PHOTO */
 
-.home-hero {
-    background-color: #a9cfe5;
-    background-image: url("home-banner.jpg");
-}
 
 
 /* RESEARCH PHOTO */
@@ -220,27 +216,70 @@ h2::after {
 
 
 /* =========================
+   HOME
+   ========================= */
+
+.home-intro {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 42px 35px 32px 35px;
+
+    text-align: center;
+}
+
+
+.home-intro h1 {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 3.2rem;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+}
+
+
+.home-intro p {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    color: #666666;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+
+.home-content {
+    padding-top: 20px;
+}
+
+
+
+/* =========================
    ABOUT
    ========================= */
 
 .about-section {
     font-size: 1.05rem;
 
-    margin-bottom: 70px;
+    margin-bottom: 65px;
 }
 
-
-/* Profile photo + description */
 
 .about-grid {
     display: grid;
 
     grid-template-columns: 36% 64%;
 
-    gap: 45px;
+    gap: 50px;
 
     align-items: start;
 }
+
 
 .about-photo img {
     width: 100%;
@@ -250,14 +289,85 @@ h2::after {
     display: block;
 }
 
+
+.about-text {
+    padding-top: 3px;
+}
+
+
 .about-text p {
-    margin-bottom: 22px;
-}
-
-.about-text p:first-child {
     margin-top: 0;
+    margin-bottom: 24px;
 }
 
+
+
+/* =========================
+   JOB MARKET BOX
+   ========================= */
+
+.job-market-box {
+    margin-top: 30px;
+    margin-bottom: 27px;
+
+    padding: 18px 22px;
+
+    background-color: #eef4f7;
+
+    border-left: 3px solid #347fa6;
+
+    font-size: 1.08rem;
+}
+
+
+
+/* =========================
+   HOME CV + EMAIL
+   ========================= */
+
+.home-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.cv-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #347fa6;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    border-radius: 3px;
+}
+
+
+.cv-button:hover {
+    background-color: #205c7d;
+
+    color: #ffffff;
+}
+
+
+.email-link {
+    color: #347fa6;
+
+    font-weight: 500;
+}
+
+
+.email-link:hover {
+    color: #205c7d;
+}
 
 /* =========================
    CONTACT
